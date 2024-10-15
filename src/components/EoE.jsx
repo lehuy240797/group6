@@ -2,6 +2,7 @@ import React from "react";
 import "../css/BigBang.css"
 
 const EoE = () => {
+    const path = process.env.PUBLIC_URL;
     return (
         <div className="custom_container">
             <header className="custom_container_header">
@@ -41,7 +42,7 @@ const EoE = () => {
                     style={{ display: 'block', margin: '0 auto', maxWidth: '100%' }}
                     width="auto"
                     height="auto"
-                    src="/assets/videos/earth.mp4"
+                    src={`${path}/assets/videos/earth.mp4`}
                     type="video/mp4"
                     loop
                     autoPlay
@@ -75,7 +76,7 @@ const EoE = () => {
 
                     <h2>4. The Age of Dinosaurs and Ancient Times</h2>
                     <div className="image_section">
-                        <img src="/assets/images/EoE/dinosaur.webp" alt="dinosaur" className="responsive_image" />
+                        <img src={`${path}/assets/images/EoE/dinosaur.webp`} alt="dinosaur" className="responsive_image" />
                     </div>
                     <p>
                         Around 250 million years ago, Earth entered the age of giant creatures like dinosaurs. This was one of the most

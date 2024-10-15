@@ -2,6 +2,7 @@ import React from "react";
 import "../css/BigBang.css"
 
 const BigBang = () => {
+    const path = process.env.PUBLIC_URL;
     return (
         <div className="custom_container">
             {/* Tiêu đề chính */}
@@ -33,7 +34,7 @@ const BigBang = () => {
                     style={{ display: 'block', margin: '0 auto', maxWidth: '100%' }}
                     width="auto"
                     height="auto"
-                    src="/assets/videos/bigbang.mp4"
+                    src={`${path}/assets/videos/bigbang.mp4`}
                     type="video/mp4"
                     loop
                     autoPlay
@@ -57,7 +58,7 @@ const BigBang = () => {
 
                     <h2>6. Formation of Stars and Galaxies:</h2>
                     <div className="image_section">
-                        <img src="/assets/images/bigbang/milky_way.webp" alt="Milky Way" className="responsive_image" />
+                        <img src={`${path}/assets/images/bigbang/milky_way.webp`} alt="Milky Way" className="responsive_image" />
                     </div>
                     <p>After millions of years, these atoms began to combine together. Some atoms formed stars, while stars grouped together to form galaxies. A galaxy is a large group of stars, planets, and gas. For example, our galaxy is called the Milky Way.</p>
 

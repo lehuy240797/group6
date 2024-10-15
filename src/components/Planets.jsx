@@ -3,6 +3,7 @@ import PlanetsData from "../data/PlanetsData.json";
 import "../css/Planets.css";
 
 const Planets = () => {
+  const path = process.env.PUBLIC_URL;
   const [selectedItem, setSelectedItem] = useState(null);
   const iframeRef = useRef(null);
 
@@ -29,28 +30,28 @@ const Planets = () => {
     <>
       <div className="planets__sub-menu">
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[0])} title="Mercury">
-          <img src="/assets/images/planets/mercury.webp" alt="Mercury" />
+          <img src={`${path}/assets/images/planets/mercury.webp`} alt="Mercury" />
         </div>
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[1])} title="Venus">
-          <img src="/assets/images/planets/venus.webp" alt="Venus" />
+          <img src={`${path}/assets/images/planets/venus.webp`} alt="Venus" />
         </div>
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[2])} title="Earth">
-          <img src="/assets/images/planets/earth.webp" alt="Earth" />
+          <img src={`${path}/assets/images/planets/earth.webp`} alt="Earth" />
         </div>
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[3])} title="Mars">
-          <img src="/assets/images/planets/mars.webp" alt="Mars" />
+          <img src={`${path}/assets/images/planets/mars.webp`} alt="Mars" />
         </div>
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[4])} title="Jupiter">
-          <img src="/assets/images/planets/jupiter.webp" alt="Jupiter" />
+          <img src={`${path}/assets/images/planets/jupiter.webp`} alt="Jupiter" />
         </div>
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[5])} title="Saturn">
-          <img src="/assets/images/planets/saturn.webp" alt="Saturn" />
+          <img src={`${path}/assets/images/planets/saturn.webp`} alt="Saturn" />
         </div>
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[6])} title="Uranus">
-          <img src="/assets/images/planets/uranus.webp" alt="Uranus" />
+          <img src={`${path}/assets/images/planets/uranus.webp`} alt="Uranus" />
         </div>
         <div className="planets__menu-item" onClick={() => handleClick(PlanetsData[7])} title="Neptune">
-          <img src="/assets/images/planets/neptune.webp" alt="Neptune" />
+          <img src={`${path}/assets/images/planets/neptune.webp`} alt="Neptune" />
         </div>
       </div>
 

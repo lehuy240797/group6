@@ -2,6 +2,7 @@ import React from "react";
 import "../css/BigBang.css"
 
 const Comets = () => {
+    const path = process.env.PUBLIC_URL;
     return (
         <div className="custom_container">
             {/* Tiêu đề chính */}
@@ -25,7 +26,7 @@ const Comets = () => {
                     <h2>What are comets?</h2>
                     <p>Comets are small celestial bodies that orbit the Sun in the Solar System. They are composed of ice, dust, rocks, and organic compounds. When a comet approaches the Sun, the heat from the Sun melts the ice and volatile materials, causing them to evaporate and form a cloud of gas called the "coma." Comets are often visible to the naked eye due to the light reflecting from the coma and their tails.</p>
                     <div className="image_section">
-                        <img src="/assets/images/comets/comet.webp" alt="comet" className="responsive_image" />
+                        <img src={`${path}/assets/images/comets/comet.webp`} alt="comet" className="responsive_image" />
                     </div>
 
                     <h2>Structure of a comet</h2>
@@ -55,7 +56,7 @@ const Comets = () => {
                     <h2>Notable examples of comets</h2>
                     <h3>Halley's Comet (1P/Halley):</h3>
                     <div className="image_section">
-                        <img src="/assets/images/comets/Giotto_halley.webp" alt="Giotto_halley" className="responsive_image" />
+                        <img src={`${path}/assets/images/comets/Giotto_halley.webp`} alt="Giotto_halley" className="responsive_image" />
                     </div>
                     <p>Period: Approximately 75-76 years.</p>
                     <p>Last seen: In 1986, it will return in 2061.</p>
@@ -63,21 +64,21 @@ const Comets = () => {
                     <p>Size: The nucleus of Halley is about 15 km long and 8 km wide.</p>
                     <h3>Comet Hale-Bopp (C/1995 O1):</h3>
                     <div className="image_section">
-                        <img src="/assets/images/comets/halebopp.webp" alt="halebopp" className="responsive_image" />
+                        <img src={`${path}/assets/images/comets/halebopp.webp`} alt="halebopp" className="responsive_image" />
                     </div>
                     <p>Period: Approximately 2,533 years.</p>
                     <p>Discovery: In 1995 by astronomers Alan Hale and Thomas Bopp.</p>
                     <p>Characteristics: Hale-Bopp was bright and visible to the naked eye for several months in 1997, even in urban areas.</p>
                     <h3>Comet Hyakutake (C/1996 B2):</h3>
                     <div className="image_section">
-                        <img src="/assets/images/comets/Hyakutake.webp" alt="Hyakutake" className="responsive_image" />
+                        <img src={`${path}/assets/images/comets/Hyakutake.webp`} alt="Hyakutake" className="responsive_image" />
                     </div>
                     <p>Period: Approximately 70,000 years.</p>
                     <p>Discovery: In 1996 by Japanese astronomer Yuji Hyakutake.</p>
                     <p>Characteristics: This comet came very close to Earth in 1996, just 15 million km away, making it one of the brightest comets of that period. The tail of Hyakutake was one of the longest ever observed, extending about 570 million km.</p>
                     <h3>Comet Tempel 1 (9P/Tempel):</h3>
                     <div className="image_section">
-                        <img src="/assets/images/comets/comet_9P-Tempel.webp" alt="9P-Tempel" className="responsive_image" />
+                        <img src={`${path}/assets/images/comets/comet_9P-Tempel.webp`} alt="9P-Tempel" className="responsive_image" />
                     </div>
                     <p>Period: 5.5 years.</p>
                     <p>Discovery: In 1867 by Ernst Wilhelm Leberecht Tempel.</p>

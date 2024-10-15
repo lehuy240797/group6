@@ -85,12 +85,12 @@ const Contact = () => {
         </div>
         <div className="contact-page__portrait">
           <h3 className="contact-page__portrait-title">Khanh</h3>
-          <img className='contact-page__portrait-image' src="./assets/images/contact/trung-anh.jpg" alt="" />
+          <img className='contact-page__portrait-image' src="./assets/images/contact/quoc-khanh.jpg" alt="" />
           <p className="contact-page__portrait-details">Details about Khanh.</p>
         </div>
         <div className="contact-page__portrait">
           <h3 className="contact-page__portrait-title">Dung</h3>
-          <img className='contact-page__portrait-image' src="./assets/images/contact/trung-anh.jpg" alt="" />
+          <img className='contact-page__portrait-image' src="./assets/images/contact/dung.jpg" alt="" />
           <p className="contact-page__portrait-details">Details about Dung.</p>
         </div>
       </div>
