@@ -1,0 +1,75 @@
+.spacing {
+  margin-bottom: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.obserimg {
+  width: 500pt;
+  /* Adjust the size of images */
+  margin: 0 2.5%;
+  /* Space between images */
+}
+
+.text-box {
+  width: 80%;
+  /* Width of the text boxes */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Light background for text boxes */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  /* Rounded corners */
+  color: white;
+}
+
+.text-box h2 {
+  color: rgba(191, 178, 136, 1);
+  font-weight: bold;
+}
+.text-box p {
+  font-size: 16px;
+}
+.separator {
+  border: none; /* Removes the default border */
+  height: 5px; /* Sets the height of the line */
+  background-color: #ccc; /* Choose any color for the line */
+  margin: 20px 0; /* Adds space above and below the line */
+  width: 100%; /* Ensures the line stretches across the width */
+}
+/* Your existing CSS remains unchanged */
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .obserimg {
+      max-width: 90%; /* Make images more fluid on smaller screens */
+      height: auto;   /* Maintain aspect ratio */
+  }
+
+  .text-box {
+      width: 90%; /* Make text boxes adjust for smaller screens */
+  }
+
+  .image-row {
+      flex-direction: column; /* Stack images vertically on small screens */
+      align-items: center; /* Center images when stacked */
+  }
+
+  .spacing {
+      margin-bottom: 15px; /* Slightly reduce the spacing for mobile */
+  }
+
+  .content {
+      margin: 10px; /* Smaller margin for compact screens */
+  }
+}

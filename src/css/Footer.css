@@ -1,0 +1,95 @@
+.footer {
+  color: white;
+  position: relative;
+  border-top: 3px solid white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footer-logo {
+  width: 250px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Space between categories */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+}
+
+.footer-category {
+  text-align: left;
+  flex: 1 1 300px; /* Adjust categories to take up space evenly */
+  margin: 10px; /* Add some margin between categories */
+}
+
+.footer-category h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-category ul li {
+  margin-bottom: 5px;
+}
+
+.footer-category ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-category ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 200px; /* Reduce logo size for smaller screens */
+  }
+
+  .footer-category {
+    flex: 1 1 100%; /* Make categories take up full width */
+    text-align: center; /* Center-align text for better mobile display */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    width: 150px; /* Further reduce logo size for mobile phones */
+  }
+
+  .footer-category h4 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-category ul li a {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}

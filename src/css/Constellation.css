@@ -1,0 +1,166 @@
+.constellations {
+  display: flex;
+  justify-content: space-between; /* Giãn cách đều giữa các mục */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  flex-wrap: wrap; /* Cho phép các mục xuống hàng nếu không đủ không gian */
+  margin: 20px 0;
+  cursor: pointer;
+  column-gap: 50px;
+  padding: 10px 20px;
+  background-color: rgb(2, 2, 67);
+}
+
+.constellations-menu {
+  width: 150px;
+  height: 150px;
+  overflow: hidden; /* Ẩn phần hình ảnh vượt ra ngoài */
+  margin: 20px; /* Khoảng cách giữa các mục */
+  position: relative; /* Để có thể căn giữa hình ảnh */
+  transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+  display: flex; /* Để căn giữa nội dung bên trong */
+  justify-content: center; /* Căn giữa hình ảnh */
+  align-items: center; /* Căn giữa hình ảnh */
+  border: thin solid black;
+  box-shadow: 4px 4px 8px grey;
+}
+
+.constellations-menu img {
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  height: 100%; /* Chiếm toàn bộ chiều cao */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+.constellations-menu:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+  animation: sparkle2 1.5s infinite; /* Thêm hiệu ứng lấp lánh */
+}
+
+@keyframes sparkle2 {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5),
+                0 0 10px rgba(255, 0, 0, 0.5),
+                0 0 15px rgba(204, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1),
+                0 0 30px rgba(204, 0, 0, 1),
+                0 0 40px rgba(204, 0, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5),
+                0 0 10px rgba(255, 0, 0, 0.5),
+                0 0 15px rgba(204, 0, 0, 0.5);
+  }
+}
+
+
+.constellations-menu-details {
+  margin-top: 20px;
+  color: white;
+}
+
+.icon {
+  margin-right: 10px; /* Khoảng cách giữa dấu chấm và văn bản */
+  font-size: 1.2rem; /* Điều chỉnh kích thước */
+}
+
+.details-item {
+  margin-bottom: 20px; /* Khoảng cách giữa các chi tiết */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.constellations-menu-details-content {
+  column-count: 3;
+  margin: 30px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.constellations-menu-details h2 {
+  font-size: 2rem; /* Kích thước chữ lớn hơn */
+  color: #F2AA4C;
+  text-align: center; /* Canh giữa */
+  font-weight: bold; /* Làm cho chữ đậm */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ cho chữ */
+}
+
+.constellations-video {
+  height: auto;
+  width: 70%;
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center;
+  margin: 0 auto; /* Căn giữa video trong khung cha */
+  margin-bottom: 30px;
+  border: 2px solid gray;
+}
+
+.constellations-video iframe {
+  width: 100%;
+  height: auto; /* Tự động chiều cao */
+  aspect-ratio: 16 / 9; /* Giữ tỉ lệ 16:9 */
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .constellations-menu-details-content {
+    column-count: 2;   
+    margin: 20px;
+    
+  }
+
+  .constellations-menu {
+    flex-wrap: wrap; /* Cho phép các ảnh xuống hàng */
+    margin-left: 35px;
+    width: 200px;
+    height: 200px;
+
+  }
+
+  .constellations-menu img {
+    width: 100%; /* Khi xuống hàng, ảnh sẽ chiếm toàn bộ chiều rộng */
+    height: auto; /* Giữ tỉ lệ ảnh */
+  }
+
+  .constellations-video {
+    height: auto; /* Tự động chiều cao cho màn hình nhỏ */
+    width: 100%;
+
+} 
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .constellations-menu-details-content {
+    column-count: 1;
+    margin: 10px;
+    
+  }
+
+  .constellations-menu {
+    flex-wrap: wrap; /* Cho phép các ảnh xuống hàng */
+    margin-left: 35px;
+    width: 350px;
+    height: 350px;
+
+  }
+
+  .constellations-menu img {
+    width: 100%; /* Khi xuống hàng, ảnh sẽ chiếm toàn bộ chiều rộng */
+    height: auto; /* Giữ tỉ lệ ảnh */
+  }
+}
+
+
+
