@@ -8,7 +8,7 @@ Project title: The Cosmic Discoveries
 
 ========> Group 6 <=========
 
-3 collaborators:
+4 collaborators:
 
     Le Nguyen Gia Huy	Student1571995
 
