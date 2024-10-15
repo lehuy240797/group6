@@ -79,15 +79,15 @@ const Contact = () => {
         </div>
         <div className="contact-page__portrait">
           <img className='contact-page__portrait-image' src="./assets/images/contact/gia-huy.jpg" alt="" />
-          <p className="contact-page__portrait-details">Le Nguyen Gia Huy.</p>
+          <p className="contact-page__portrait-details">Le Nguyen Gia Huy</p>
         </div>
         <div className="contact-page__portrait">
           <img className='contact-page__portrait-image' src="./assets/images/contact/quoc-khanh.jpg" alt="" />
-          <p className="contact-page__portrait-details">Dang Quoc Khanh.</p>
+          <p className="contact-page__portrait-details">Dang Quoc Khanh</p>
         </div>
         <div className="contact-page__portrait">
           <img className='contact-page__portrait-image' src="./assets/images/contact/dung.jpg" alt="" />
-          <p className="contact-page__portrait-details">Nguyen Hoang Dung.</p>
+          <p className="contact-page__portrait-details">Nguyen Hoang Dung</p>
         </div>
       </div>
     </div>
