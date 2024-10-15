@@ -74,24 +74,20 @@ const Contact = () => {
       {/* Team Portrait Section */}
       <div className="contact-page__portraits-container">
         <div className="contact-page__portrait">
-          <h3 className="contact-page__portrait-title">Anh</h3>
           <img className='contact-page__portrait-image' src="./assets/images/contact/trung-anh.jpg" alt="" />
-          <p className="contact-page__portrait-details">Details about Anh.</p>
+          <p className="contact-page__portrait-details">Tran Trung Anh</p>
         </div>
         <div className="contact-page__portrait">
-          <h3 className="contact-page__portrait-title">Huy</h3>
           <img className='contact-page__portrait-image' src="./assets/images/contact/gia-huy.jpg" alt="" />
-          <p className="contact-page__portrait-details">Details about Huy.</p>
+          <p className="contact-page__portrait-details">Le Nguyen Gia Huy.</p>
         </div>
         <div className="contact-page__portrait">
-          <h3 className="contact-page__portrait-title">Khanh</h3>
           <img className='contact-page__portrait-image' src="./assets/images/contact/quoc-khanh.jpg" alt="" />
-          <p className="contact-page__portrait-details">Details about Khanh.</p>
+          <p className="contact-page__portrait-details">Dang Quoc Khanh.</p>
         </div>
         <div className="contact-page__portrait">
-          <h3 className="contact-page__portrait-title">Dung</h3>
           <img className='contact-page__portrait-image' src="./assets/images/contact/dung.jpg" alt="" />
-          <p className="contact-page__portrait-details">Details about Dung.</p>
+          <p className="contact-page__portrait-details">Nguyen Hoang Dung.</p>
         </div>
       </div>
     </div>

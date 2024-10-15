@@ -67,7 +67,7 @@ const Books = ({ setCart }) => {
             <div className="books-container">
                 {books.map((book) => (
                     <div key={book.id} className="book-item">
-                        <img src={book.image} alt={book.title} />
+                        <img src={book.img} alt={book.title} />
                         <h3>{book.title}</h3>
                         <p>Buy Price: {book.priceBuy.toFixed(2)} USD</p>
                         <p>Borrow Price: {book.priceBorrow.toFixed(2)} USD</p>

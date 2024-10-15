@@ -25,7 +25,7 @@ const Cart = ({ cartItems, setCart }) => {
 
     // Tăng số lượng sản phẩm
     const handleIncreaseQuantity = (itemToUpdate) => {
-        setCart(cartItems.map(item => 
+        setCart(cartItems.map(item =>
             item.id === itemToUpdate.id && item.type === itemToUpdate.type
                 ? { ...item, quantity: item.quantity + 1 }
                 : item
@@ -70,7 +70,7 @@ const Cart = ({ cartItems, setCart }) => {
     // Xử lý gửi form
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("The order has been placed successfully. Thank you!");
+        
         setShowSuccessModal(true);  // Hiển thị modal thông báo
         setCart([]); // Reset lại giỏ hàng sau khi đặt hàng
         setShowCheckoutForm(false);  // Quay lại giao diện giỏ hàng
@@ -134,6 +134,18 @@ const Cart = ({ cartItems, setCart }) => {
                         </label>
                         <button type="submit">Confirm Order</button>
                     </form>
+                </div>
+            )}
+
+            {showSuccessModal && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <div className="modal-header">Order Placed Successfully</div>
+                        <div className="modal-body">Thank you! Your order has been placed successfully.</div>
+                        <div className="modal-footer">
+                            <button onClick={() => setShowSuccessModal(false)}>Close</button>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
