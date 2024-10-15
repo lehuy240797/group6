@@ -12,10 +12,10 @@ const Home = () => {
 
     const banners = [
         { img: `${path}/assets/images/home/banner01.webp`, link: '/BigBang' },
-        { img: `${path}"/assets/images/home/banner02.webp`, link: '/EoE' },
-        { img: `${path}"/assets/images/home/banner03.webp`, link: '/Planets' },
-        { img: `${path}"/assets/images/home/banner04.webp`, link: '/Constellation' },
-        { img: `${path}"/assets/images/home/banner05.webp`, link: '/Comets' }
+        { img: `${path}/assets/images/home/banner02.webp`, link: '/EoE' },
+        { img: `${path}/assets/images/home/banner03.webp`, link: '/Planets' },
+        { img: `${path}/assets/images/home/banner04.webp`, link: '/Constellation' },
+        { img: `${path}/assets/images/home/banner05.webp`, link: '/Comets' }
     ];
 
     const settings = {
