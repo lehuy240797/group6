@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../css/NavBar.css";
 
 const NavBar = ({ cartItems }) => {
+    const path = process.env.PUBLIC_URL;
     const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
 
@@ -31,7 +32,7 @@ const NavBar = ({ cartItems }) => {
             </button>
 
             <Link className="navbar_logo" to='/'  onClick={(e) => handleMenuItemClick('/', e)}>
-                <img src="/assets/images/logo.webp" alt="logo" />
+                <img src={`${path}/assets/images/logo.webp`} alt="logo" />
             </Link>
 
             <ul className={`navbar_menu_items ${isOpen ? 'open' : ''}`}>
