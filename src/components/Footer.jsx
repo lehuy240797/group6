@@ -2,11 +2,12 @@ import React from 'react';
 import '../css/Footer.css';
 
 const Footer = () => {
+    const path = process.env.PUBLIC_URL;
     return (
         <footer className="footer">
             <div className="footer-content">
               <div>
-                <img src="/assets/images/footer/logo_aptech.png" alt="Logo" className="footer-logo" /> {/* Add the class here */}
+                <img src={`${path}/assets/images/footer/logo_aptech.png`} alt="Logo" className="footer-logo" /> {/* Add the class here */}
               </div>
                 <div className="footer-category">
                     <h1>About Us</h1>
