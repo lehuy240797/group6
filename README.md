@@ -19,7 +19,7 @@ Project title: The Cosmic Discoveries
     Nguyen Hoang Dung   Student1515873
 ============================
 
-eProject documentation at https://github.com//lehuy240797/group6/document
+eProject documentation at https://github.com/lehuy240797/group6/tree/main/document
 
 run at : https://lehuy240797.github.io/group6/
 
