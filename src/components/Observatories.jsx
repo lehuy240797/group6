@@ -7,7 +7,6 @@ const Observatories = () => {
         <div className="sketch2-container">
             <div className="content">
                 <h1>Observatories</h1>
-                {/* First row of images and text box */}
                 <div className="image-row">
                     <img src={`${path}/assets/images/observatories/maunakea.png`} alt="Image01" className="obserimg" />
                     <iframe
@@ -46,7 +45,6 @@ const Observatories = () => {
                 </div>
                 <hr className="separator" />
 
-                {/* Second row of images and text box */}
                 <div className="image-row">
                     <img src={`${path}/assets/images/observatories/Kitt.webp`} alt="Image02" className="obserimg" />
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13539.423887277602!2d-111.60980434487107!3d31.96480383844367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d5b3c13bda5da9%3A0x63124647309ad337!2sKitt%20Peak!5e0!3m2!1sen!2s!4v1727712456040!5m2!1sen!2s"
@@ -83,7 +81,6 @@ const Observatories = () => {
                 </div>
                 <hr className="separator" />
 
-                {/* Third row of images and text box */}
                 <div className="image-row">
                     <img src={`${path}/assets/images/observatories/VLT.png`} alt="Image03" className="obserimg" />
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.8903070174824!2d-70.40703512458596!3d-24.62746530162313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96a54b61d20df8a7%3A0xffc2d3eef16a026b!2sVery%20Large%20Telescope!5e0!3m2!1sen!2s!4v1727712338263!5m2!1sen!2s"

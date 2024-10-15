@@ -4,44 +4,46 @@
   min-height: 600px;
   margin-top: 20px;
   margin-left: 20px;
-  position: relative; /* Để định vị các hình ảnh một cách chính xác */
+  position: relative;
 }
 
 .TCD-container img {
-  width: 0%; /* Bắt đầu từ kích thước 0% */
-  height: 0%; /* Bắt đầu từ kích thước 0% */
+  width: 0%;
+  height: 0%;
   object-fit: cover;
   border-radius: 10px;
   border: 3px solid mediumturquoise;
   overflow: hidden;
-  opacity: 0; /* Ẩn ảnh ban đầu */
-  transform: scale(0); /* Bắt đầu với kích thước rất nhỏ */
-  animation: spawnAnimation 1s ease-in-out forwards; /* Kích hoạt animation */
+  opacity: 0;
+  transform: scale(0);
+  animation: spawnAnimation 1s ease-in-out forwards;
 }
 
-/* Phân thân từ một ảnh duy nhất */
+
 @keyframes spawnAnimation {
   0% {
-    width: 0%; /* Bắt đầu từ kích thước nhỏ */
+    width: 0%;
     height: 0%;
     opacity: 0;
-    transform: scale(0); /* Bắt đầu với kích thước nhỏ */
+    transform: scale(0);
   }
+
   50% {
-    width: 30%; /* Kích thước ảnh tăng dần */
+    width: 30%;
     height: 30%;
     opacity: 0.5;
-    transform: scale(0.5); /* Tăng kích thước nhưng chưa đến mức cuối */
+    transform: scale(0.5);
   }
+
   100% {
-    width: 90%; /* Kích thước cuối cùng */
+    width: 90%;
     height: 90%;
     opacity: 1;
-    transform: scale(1); /* Tăng kích thước đến mức hoàn chỉnh */
+    transform: scale(1);
   }
 }
 
-/* Tăng dần thời gian delay cho mỗi hình */
+
 .TCD-container img:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -62,26 +64,26 @@
   animation-delay: 0.5s;
 }
 
-/* Phóng to hình ảnh khi hover */
+
 .TCD-container img:hover {
-  box-shadow: 0 0 13px rgba(255, 105, 180, 1),  /* HotPink */
-              0 0 13px rgba(255, 182, 193, 0.9),  /* LightPink */
-              0 0 13px rgba(255, 20, 147, 0.7); /* DeepPink */
+  box-shadow: 0 0 13px rgba(255, 105, 180, 1),
+    0 0 13px rgba(255, 182, 193, 0.9),
+    0 0 13px rgba(255, 20, 147, 0.7);
 }
 
-/* Responsive cho các màn hình nhỏ hơn */
+
 @media (max-width: 768px) {
   .TCD-container {
-    flex-wrap: wrap; /* Cho phép các ảnh xuống hàng */
+    flex-wrap: wrap;
     padding: 20px;
     gap: 20px;
   }
-  
+
   .TCD-container img {
     border: 3px solid mediumturquoise;
-    width: 90%; /* Khi xuống hàng, ảnh sẽ chiếm toàn bộ chiều rộng */
-    height: auto; /* Giữ tỉ lệ ảnh */
-    transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng zoom mượt mà */
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
     border-radius: 15%;
   }
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../css/Cart.css";
 
 const Cart = ({ cartItems, setCart }) => {
-    const [showCheckoutForm, setShowCheckoutForm] = useState(false);  // Trạng thái để điều khiển hiển thị form
+    const [showCheckoutForm, setShowCheckoutForm] = useState(false);
 
     const [formData, setFormData] = useState({
         name: "",
@@ -12,7 +12,6 @@ const Cart = ({ cartItems, setCart }) => {
         notes: ""
     });
 
-    // Tính toán tổng số lượng và giá
     const calculateTotals = () => {
         let totalQuantity = 0;
         let totalPrice = 0;
@@ -23,7 +22,6 @@ const Cart = ({ cartItems, setCart }) => {
         return { totalQuantity, totalPrice };
     };
 
-    // Tăng số lượng sản phẩm
     const handleIncreaseQuantity = (itemToUpdate) => {
         setCart(cartItems.map(item =>
             item.id === itemToUpdate.id && item.type === itemToUpdate.type
@@ -32,7 +30,6 @@ const Cart = ({ cartItems, setCart }) => {
         ));
     };
 
-    // Giảm số lượng sản phẩm
     const handleDecreaseQuantity = (itemToUpdate) => {
         const item = cartItems.find(item => item.id === itemToUpdate.id && item.type === itemToUpdate.type);
         if (item.quantity > 1) {
@@ -46,34 +43,29 @@ const Cart = ({ cartItems, setCart }) => {
         }
     };
 
-    // Xóa sản phẩm khỏi giỏ hàng
     const handleRemoveItem = (itemToRemove) => {
         setCart(cartItems.filter(item => !(item.id === itemToRemove.id && item.type === itemToRemove.type)));
     };
 
-    // Hiển thị form giao hàng
     const handleCheckout = () => {
         if (cartItems.length === 0) {
             alert("Your cart is empty. Please add some products before checking out.");
         } else {
-            setShowCheckoutForm(true);  // Hiển thị form đăng ký giao hàng
+            setShowCheckoutForm(true);
         }
     };
 
-    // Xử lý thay đổi form
     const handleFormChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const [showSuccessModal, setShowSuccessModal] = useState(false);
 
-    // Xử lý gửi form
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-        setShowSuccessModal(true);  // Hiển thị modal thông báo
-        setCart([]); // Reset lại giỏ hàng sau khi đặt hàng
-        setShowCheckoutForm(false);  // Quay lại giao diện giỏ hàng
+        setShowSuccessModal(true);
+        setCart([]);
+        setShowCheckoutForm(false);
     };
 
     const { totalQuantity, totalPrice } = calculateTotals();

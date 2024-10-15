@@ -1,56 +1,57 @@
-/* Đảm bảo phần banner không bị navbar che khuất */
-.home_banner {
-    width: 100%;
-    height: auto;
-     /* Khoảng cách từ trên xuống dưới cho navbar */
-    overflow: hidden;
-    position: relative;
-}
+ .home_banner {
+     width: 100%;
+     height: auto;
+     overflow: hidden;
+     position: relative;
+ }
 
-.home_banner img {
-    width: 100%;
-    height: auto; /* Chiều cao cho màn hình lớn */
-    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
-}
+ .home_banner img {
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+ }
 
-/* Các nút điều khiển trái/phải của slider */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10; /* Đặt nút lên trên hình ảnh */
-}
 
-.prev {
-    left: 10px; /* Nút phía trái */
-}
+ .prev,
+ .next {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     background-color: rgba(0, 0, 0, 0.5);
+     color: white;
+     border: none;
+     cursor: pointer;
+     padding: 10px;
+     z-index: 10;
+ }
 
-.next {
-    right: 10px; /* Nút phía phải */
-}
+ .prev {
+     left: 10px;
+ }
 
-/* Responsive cho màn hình nhỏ hơn */
-@media (max-width: 768px) {
-    .home_banner img {
-        height: 400px; /* Chiều cao nhỏ hơn cho thiết bị nhỏ */
-    }
+ .next {
+     right: 10px;
+ }
 
-    .prev, .next {
-        padding: 8px; /* Kích thước nút nhỏ hơn */
-    }
-}
 
-@media (max-width: 480px) {
-    .home_banner img {
-        height: 300px; /* Chiều cao nhỏ hơn cho màn hình cực nhỏ */
-    }
+ @media (max-width: 768px) {
+     .home_banner img {
+         height: 400px;
+     }
 
-    .prev, .next {
-        padding: 6px;
-    }
-}
+     .prev,
+     .next {
+         padding: 8px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .home_banner img {
+         height: 300px;
+     }
+
+     .prev,
+     .next {
+         padding: 6px;
+     }
+ }

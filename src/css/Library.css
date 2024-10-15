@@ -1,4 +1,3 @@
-/* Style tổng quát cho Library */
 .library {
   margin: 0 auto;
   padding: 20px;
@@ -42,7 +41,7 @@
   margin-top: 20px;
 }
 
-/* Videos styles */
+
 .library__videos {
   text-align: left;
 }
@@ -55,7 +54,7 @@
   display: block;
 }
 
-/* Books styles */
+
 .library__books {
   text-align: left;
 }

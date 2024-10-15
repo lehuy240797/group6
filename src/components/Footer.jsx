@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-              <div>
-                <img src={`${path}/assets/images/footer/logo_aptech.png`} alt="Logo" className="footer-logo" /> {/* Add the class here */}
-              </div>
+                <div>
+                    <img src={`${path}/assets/images/footer/logo_aptech.png`} alt="Logo" className="footer-logo" />
+                </div>
                 <div className="footer-category">
                     <h1>About Us</h1>
                     <p>We are a team of passionate developers.</p>

@@ -15,8 +15,8 @@
 }
 
 .news-image {
-  width: 300px; /* Chiều rộng cố định cho desktop */
-  height: 200px; /* Chiều cao cố định cho desktop */
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   margin-right: 20px;
   border-radius: 10px;
@@ -79,10 +79,10 @@
   background-color: #0056b3;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1200px) {
   .news-image {
-    width: 280px; /* Adjust kích thước hình ảnh cho tablet */
+    width: 280px;
     height: 180px;
   }
 
@@ -93,7 +93,7 @@
 
 @media (max-width: 992px) {
   .news-image {
-    width: 250px; /* Adjust kích thước hình ảnh cho màn hình tablet nhỏ hơn */
+    width: 250px;
     height: 160px;
   }
 
@@ -102,25 +102,25 @@
   }
 
   .news-title h3 {
-    font-size: 1.3rem; /* Giảm font size cho màn hình nhỏ hơn */
+    font-size: 1.3rem;
   }
 
   .news-content p {
-    font-size: 0.95rem; /* Adjust font size */
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 768px) {
   .news-container {
-    flex-direction: column; /* Đổi hướng thành dọc khi màn hình nhỏ */
+    flex-direction: column;
     align-items: flex-start;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   .news-image {
-    width: 100%; /* Hình ảnh sẽ chiếm toàn bộ chiều rộng màn hình */
-    height: auto; /* Giữ tỷ lệ chiều cao tương ứng */
+    width: 100%;
+    height: auto;
     margin-bottom: 15px;
   }
 
@@ -144,14 +144,14 @@
 
 @media (max-width: 576px) {
   .h1-content {
-    font-size: 1.8rem; /* Giảm kích thước chữ tiêu đề */
+    font-size: 1.8rem;
   }
 
   .news-title h3 {
-    font-size: 1.1rem; /* Adjust font size cho màn mobile */
+    font-size: 1.1rem;
   }
 
   .news-content p {
-    font-size: 0.85rem; /* Adjust font size cho đoạn mô tả */
+    font-size: 0.85rem;
   }
 }

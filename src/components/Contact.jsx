@@ -17,7 +17,6 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      {/* Info Section */}
       <div className="contact-page__info-box">
         <h1 className="contact-page__title">Contact Us</h1>
         <p className="contact-page__details">
@@ -29,9 +28,7 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Map and Form Section */}
       <div className="contact-page__map-form-container">
-        {/* Contact Form */}
         <div className="contact-page__form-box">
           <h2 className="contact-page__form-title">Get in Touch</h2>
           <form ref={formRef} onSubmit={handleSubmit} className="contact-page__form">
@@ -54,7 +51,6 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Google Map */}
         <div className="contact-page__map-box">
           <h2 className="contact-page__form-title">Location</h2>
           <iframe
@@ -71,7 +67,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Team Portrait Section */}
       <div className="contact-page__portraits-container">
         <div className="contact-page__portrait">
           <img className='contact-page__portrait-image' src="./assets/images/contact/trung-anh.jpg" alt="" />

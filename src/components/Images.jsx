@@ -6,7 +6,6 @@ const Images = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageDimensions, setImageDimensions] = useState({ width: 0, height: 0 });
 
-  // Danh sách hình ảnh theo từng chủ đề với tên chú thích
   const imageGroups = {
     "Galaxies": [
       { img: `${path}/assets/images/library/galaxies/milky-way.webp`, title: 'Milky Way' },
@@ -54,7 +53,6 @@ const Images = () => {
     setSelectedImage(null);
   };
 
-  // Xử lý khi nhấn phím ESC để đóng ảnh phóng to
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
@@ -69,8 +67,8 @@ const Images = () => {
   }, []);
 
   const handleImageLoad = (e) => {
-    const maxWidth = 800; // Maximum width for the resized image
-    const maxHeight = 600; // Maximum height for the resized image
+    const maxWidth = 800;
+    const maxHeight = 600;
     const { naturalWidth, naturalHeight } = e.target;
 
     let width = naturalWidth;
@@ -92,7 +90,6 @@ const Images = () => {
     <div className="library__images">
       <h2 className="library__title">Images</h2>
 
-      {/* Duyệt qua các nhóm hình ảnh */}
       {Object.keys(imageGroups).map((category) => (
         <div key={category}>
           <h3 className="category-title">{category}</h3>
@@ -100,13 +97,13 @@ const Images = () => {
             {imageGroups[category].map((item, index) => (
               <div key={index} className="image-item">
                 <img
-                  src={item.img}  // Sử dụng 'src={}' thay vì 'img:{}'
+                  src={item.img}
                   alt={item.title}
                   className="image-grid__item"
-                  onClick={() => handleImageClick(item.img)}  // Sự kiện click vào ảnh
+                  onClick={() => handleImageClick(item.img)}
                 />
 
-                <div className="image-caption">{item.title}</div> {/* Hiển thị tên hình ảnh dưới hình */}
+                <div className="image-caption">{item.title}</div>
               </div>
             ))}
           </div>
@@ -117,7 +114,7 @@ const Images = () => {
         <div className="image-overlay">
           <button className="close-button" onClick={closeImage}>X</button>
           <img
-            src={selectedImage}  // Sử dụng 'src={}' thay vì 'img:{}'
+            src={selectedImage}
             alt="Selected"
             className="image-overlay__img"
             onLoad={handleImageLoad}

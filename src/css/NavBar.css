@@ -23,7 +23,7 @@
     position: absolute;
     left: 20px;
     top: 30px;
-    z-index: 1001; /* Đặt z-index cao hơn để nút toggle không bị đè */
+    z-index: 1001;
 }
 
 .navbar_menu_items {
@@ -37,22 +37,22 @@
 }
 
 .navbar_menu_items.open {
-    position: absolute; /* Đảm bảo menu nằm ở vị trí độc lập */
-    top: 100%; /* Đẩy xuống dưới so với navbar */
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    z-index: 1000; /* Đặt z-index cao hơn các phần khác để luôn hiển thị trên cùng */
-    background-color: rgba(0, 0, 0, 0.9); /* Nền tối cho menu khi mở */
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
 .navbar_menu_items li {
     margin: 0 20px;
 }
 
-/* Hiệu ứng khi hover */
+
 .navbar_menu_items li:hover {
     transform: translateY(-5px);
 }
@@ -64,13 +64,13 @@
     text-transform: uppercase;
     font-weight: 500;
     padding: 10px;
-    transition: color 0.3s ease; /* Chỉ chuyển đổi màu sắc */
+    transition: color 0.3s ease;
     border-radius: 10px;
 }
 
-/* Giữ màu chữ khi hover */
+
 .navbar_menu_items li:hover a {
-    color: white; /* Giữ màu chữ khi hover */
+    color: white;
     background: linear-gradient(to right, #3498db, #8e44ad);
 }
 
@@ -78,7 +78,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: auto; /* Đẩy giỏ hàng sang phải */
+    margin-left: auto;
 }
 
 .cart i {
@@ -101,14 +101,14 @@
     font-weight: bold;
 }
 
-/* Đảm bảo menu và các phần tử không đè lên nhau khi màn hình hẹp */
+
 @media (max-width: 1200px) {
     .navbar_menu_items li {
-        margin: 0 10px; /* Giảm khoảng cách giữa các mục menu */
+        margin: 0 10px;
     }
 }
 
-/* Responsive tablet và mobile */
+
 @media (max-width: 1105px) {
     .navbar_menu {
         justify-content: space-between;
@@ -150,7 +150,7 @@
     }
 }
 
-/* Desktop */
+
 @media (min-width: 1106px) {
     .navbar_menu_toggle {
         display: none;

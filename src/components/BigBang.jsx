@@ -5,12 +5,11 @@ const BigBang = () => {
     const path = process.env.PUBLIC_URL;
     return (
         <div className="custom_container">
-            {/* Tiêu đề chính */}
+
             <header className="custom_container_header">
                 <h1 className="custom_container_title">THE BIG BANG THEORY</h1>
             </header>
 
-            {/* Video YouTube */}
             <section className="video_section">
                 <iframe
                     src="https://www.youtube.com/embed/GncYOf29uc4?si=1qxx13oW3wXnuDUF"

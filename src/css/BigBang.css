@@ -1,11 +1,9 @@
-/* BigBang.css */
-
 .custom_container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  color: #dcdcdc; /* Soft white text for readability */
-  background-color: transparent; /* Transparent background to fit the black page background */
+  color: #dcdcdc;
+  background-color: transparent;
 }
 
 .custom_container_header {
@@ -15,26 +13,26 @@
 
 .custom_container_title {
   font-size: 2.5rem;
-  color: #ffcc00; /* A glowing yellow to stand out against the dark */
-  text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7); /* Glow effect */
+  color: #ffcc00;
+  text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7);
   margin-bottom: 20px;
 }
 
 .video_section {
   height: auto;
   width: 70%;
-  display: flex; /* Sử dụng Flexbox */
-  justify-content: center; /* Căn giữa theo chiều ngang */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Căn giữa video trong khung cha */
+  margin: 0 auto;
   margin-bottom: 30px;
   border: 2px solid gray;
 }
 
 .video_section iframe {
   width: 100%;
-  height: auto; /* Tự động chiều cao */
-  aspect-ratio: 16 / 9; /* Giữ tỉ lệ 16:9 */
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 .text_section {
@@ -43,13 +41,13 @@
 
 .text_section h2 {
   font-size: 1.6rem;
-  color: #00ffcc; /* Cyan color for headings */
+  color: #00ffcc;
   text-shadow: 0px 0px 6px rgba(0, 255, 204, 0.8);
   margin-bottom: 15px;
 }
 
 .text_section h3 {
-  color: #e74a7e; /* Cyan color for headings */
+  color: #e74a7e;
   margin-bottom: 15px;
 }
 
@@ -57,7 +55,7 @@
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 25px;
-  color: #dcdcdc; /* White text with softer brightness */
+  color: #dcdcdc;
 }
 
 .image_section {
@@ -69,19 +67,19 @@
   width: 100%;
   max-width: 700px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* Soft glow around images */
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
 }
 
 .summary_section {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.05); /* Slightly transparent background for focus */
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2); /* Glow effect around summary section */
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
 
 .summary_section h2 {
   font-size: 1.8rem;
-  color: #ff4500; /* Bright orange for the final section */
+  color: #ff4500;
   text-shadow: 0px 0px 8px rgba(255, 69, 0, 0.8);
   margin-bottom: 20px;
 }
@@ -95,8 +93,8 @@
 
 @media screen and (max-width: 992px) {
   .video_section {
-    height: auto; /* Tự động chiều cao cho màn hình nhỏ */
+    height: auto;
     width: 100%;
 
-} 
+  }
 }

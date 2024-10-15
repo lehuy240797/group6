@@ -1,54 +1,54 @@
-/* Sub-menu */
 .planets__sub-menu {
   display: flex;
-  justify-content: space-between; /* Giãn cách đều giữa các mục */
-  align-items: center; /* Căn giữa theo chiều dọc */
-  flex-wrap: wrap; /* Cho phép các mục xuống hàng nếu không đủ không gian */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 20px 0;
   cursor: pointer;
 }
 
-/* Menu Item */
 .planets__menu-item {
-  width: 140px; /* Đường kính hình tròn ban đầu */
-  height: 140px; /* Đường kính hình tròn ban đầu */
-  border-radius: 50%; /* Bo tròn */
-  overflow: hidden; /* Ẩn phần hình ảnh vượt ra ngoài */
-  margin: 20px; /* Khoảng cách giữa các mục */
-  position: relative; /* Để có thể căn giữa hình ảnh */
-  transition: transform 0.3s ease; /* Hiệu ứng khi hover */
-  display: flex; /* Để căn giữa nội dung bên trong */
-  justify-content: center; /* Căn giữa hình ảnh */
-  align-items: center; /* Căn giữa hình ảnh */
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Hình ảnh trong menu item */
+
 .planets__menu-item img {
-  width: 130%; /* Chiếm toàn bộ chiều rộng */
-  height: 130%; /* Chiếm toàn bộ chiều cao */
-  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  width: 130%;
+  height: 130%;
+  object-fit: cover;
 }
 
 .planets__menu-item:hover {
-  transform: scale(1.1); /* Phóng to khi hover */
-  animation: sparkle1 1.5s infinite; /* Thêm hiệu ứng lấp lánh */
+  transform: scale(1.1);
+  animation: sparkle1 1.5s infinite;
 }
 
 @keyframes sparkle1 {
   0% {
     box-shadow: 0 0 5px rgba(0, 255, 0, 0.5),
-                0 0 10px rgba(0, 255, 0, 0.5),
-                0 0 15px rgba(0, 204, 0, 0.5);
+      0 0 10px rgba(0, 255, 0, 0.5),
+      0 0 15px rgba(0, 204, 0, 0.5);
   }
+
   50% {
     box-shadow: 0 0 20px rgba(0, 255, 0, 1),
-                0 0 30px rgba(0, 204, 0, 1),
-                0 0 40px rgba(0, 204, 0, 0.7);
+      0 0 30px rgba(0, 204, 0, 1),
+      0 0 40px rgba(0, 204, 0, 0.7);
   }
+
   100% {
     box-shadow: 0 0 5px rgba(0, 255, 0, 0.5),
-                0 0 10px rgba(0, 255, 0, 0.5),
-                0 0 15px rgba(0, 204, 0, 0.5);
+      0 0 10px rgba(0, 255, 0, 0.5),
+      0 0 15px rgba(0, 204, 0, 0.5);
   }
 }
 
@@ -58,16 +58,16 @@
   border-top: 2px solid white;
 }
 
-.planets__container h2{
-  font-size: 2rem; /* Kích thước chữ lớn hơn */
-  text-align: center; /* Canh giữa */
-  font-weight: bold; /* Làm cho chữ đậm */
+.planets__container h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .planets__details {
   width: 45%;
   height: 450px;
-  margin-left: 30px; 
+  margin-left: 30px;
   padding-right: 20px;
 }
 
@@ -77,44 +77,44 @@
 
 
 .planets__video {
-    flex: 1;
-    height: auto;
-    width: 100%;
-    padding: auto;
+  flex: 1;
+  height: auto;
+  width: 100%;
+  padding: auto;
 }
 
 .planets__video iframe {
   width: 100%;
-  height: auto; /* Tự động chiều cao */
-  aspect-ratio: 16 / 9; /* Giữ tỉ lệ 16:9 */
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1024px) {
   .planets__menu-item {
-      width: 100px; /* Kích thước hình tròn nhỏ hơn trên màn hình nhỏ */
-      height: 100px; /* Kích thước hình tròn nhỏ hơn trên màn hình nhỏ */
-      margin: 15px; /* Giảm khoảng cách giữa các mục */
+    width: 100px;
+    height: 100px;
+    margin: 15px;
   }
-  
+
   .planets__container {
     height: auto;
-    flex-direction: column; /* Đổi sang cột */
+    flex-direction: column;
     align-items: center;
   }
 
   .planets__details {
-    width: 100%; /* Chiếm toàn bộ chiều rộng */
-    padding: auto; /* Đặt lại khoảng cách bên trái */
-    height: auto; /* Tự động chiều cao */
+    width: 100%;
+    padding: auto;
+    height: auto;
   }
 
   .planets__video {
-    height: auto; /* Tự động chiều cao cho màn hình nhỏ */
-    margin: 20px; /* Đặt lại khoảng cách */
+    height: auto;
+    margin: 20px;
   }
 
   .planets__container h2 {
-    font-size: 1.5rem; /* Kích thước chữ nhỏ hơn */
+    font-size: 1.5rem;
   }
 }

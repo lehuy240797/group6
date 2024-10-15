@@ -11,43 +11,42 @@
 }
 
 .video-section {
-    margin-bottom: 30px; /* Khoảng cách giữa các phần video */
+    margin-bottom: 30px;
 }
 
 .video-title {
     font-size: 2em;
-    margin: 20px 0 10px; /* Khoảng cách trên và dưới */
+    margin: 20px 0 10px;
     text-align: center;
 }
 
 .video-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Căn giữa các video */
-    margin: 0; /* Xóa margin để không bị lệch */
-    overflow: hidden; /* Ẩn các phần tử vượt quá kích thước */
+    justify-content: space-between;
+    margin: 0;
+    overflow: hidden;
 }
 
 .library__video-iframe {
-    width: calc(25% - 10px); /* Đặt chiều rộng cho mỗi video là 25% */
-    height: 200px; /* Chiều cao cố định cho video */
-    padding: 10px; /* Khoảng cách giữa các video */
-    border-radius: 20px; /* Bo góc cho video */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-    box-sizing: border-box; /* Tính toán kích thước bao gồm padding và border */
+    width: calc(25% - 10px);
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .library__video-iframe {
-        width: calc(50% - 10px); /* 2 video trên 1 hàng */
-        height: 150px; /* Chiều cao video nhỏ hơn trên màn hình nhỏ */
+        width: calc(50% - 10px);
+        height: 150px;
     }
 }
 
 @media (max-width: 480px) {
     .library__video-iframe {
-        width: calc(100% - 10px); /* 1 video trên 1 hàng */
+        width: calc(100% - 10px);
     }
 }
-

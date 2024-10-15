@@ -88,12 +88,10 @@ const Developments = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const articlesPerPage = 5;
 
-  // Tính toán các bài viết cần hiển thị dựa trên trang hiện tại
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
   const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
 
-  // Tạo danh sách các số trang
   const totalPages = Math.ceil(articles.length / articlesPerPage);
   const pageNumbers = [];
   for (let i = 1; i <= totalPages; i++) {
@@ -121,7 +119,6 @@ const Developments = () => {
         </div>
       ))}
 
-      {/* Phân trang */}
       <div className="pagination">
         {pageNumbers.map((number) => (
           <button

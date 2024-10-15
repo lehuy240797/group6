@@ -5,7 +5,7 @@ const Comets = () => {
     const path = process.env.PUBLIC_URL;
     return (
         <div className="custom_container">
-            {/* Tiêu đề chính */}
+            
             <header className="custom_container_header">
                 <h1 className="custom_container_title">COMETS</h1>
             </header>

@@ -1,12 +1,12 @@
 .background {
-    position: fixed; /* Giữ background ở vị trí cố định */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../public/assets/images/background.png'); /* Đường dẫn tới ảnh GIF */
-    background-size: cover; /* Đảm bảo ảnh chiếm toàn bộ màn hình */
-    background-position: center; /* Đặt vị trí ảnh ở giữa */
-    z-index: -1; /* Đặt z-index thấp hơn để nội dung khác hiển thị lên trên */
+    background-image: url('../../public/assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
   }
   

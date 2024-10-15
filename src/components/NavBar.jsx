@@ -20,10 +20,9 @@ const NavBar = ({ cartItems }) => {
     };
 
     const getTotalQuantity = () => {
-        // Nếu cartItems chưa được truyền vào hoặc không có giá trị, đặt nó thành mảng rỗng []
         return (cartItems || []).reduce((total, item) => total + item.quantity, 0);
     };
-    
+
 
     return (
         <nav className="navbar_menu">
@@ -31,7 +30,7 @@ const NavBar = ({ cartItems }) => {
                 {isOpen ? '\u2716' : '\u2630'}
             </button>
 
-            <Link className="navbar_logo" to='/'  onClick={(e) => handleMenuItemClick('/', e)}>
+            <Link className="navbar_logo" to='/' onClick={(e) => handleMenuItemClick('/', e)}>
                 <img src={`${path}/assets/images/logo.webp`} alt="logo" />
             </Link>
 
