@@ -21,6 +21,8 @@ Project title: The Cosmic Discoveries
 
 - eProject documentation at https://github.com/lehuy240797/group6/tree/main/document
 
+- Data Test: https://github.com/lehuy240797/group6/tree/main/src/data
+
 - To run website, simply click on the following link: https://lehuy240797.github.io/group6/
 
 - Our project demonstration video: https://youtu.be/ZhCw3yiQu7A
